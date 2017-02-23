@@ -271,14 +271,38 @@ h1 {
 
 /* style des svg
 --------------------------------------------- */
-
-
-#svg_fondMontagne{
+.img_svg{
   .parallax__layer;
   position: fixed;
   path{
+    stroke:none;
+  }
+}
+
+#svg_fondMontagne{
+  transform: translateZ(-4px) scale(5);
+  path{
     fill:white;
-    stroke:#000000;
-    stroke-width:1px;
+  }
+}
+
+#svg_fondMontagne2{
+  transform: translateZ(-3px) scale(4);
+  path{
+    fill:lightblue;
+  }
+}
+
+#svg_fondMontagne3{
+  transform: translateZ(-2px) scale(3);
+  path{
+    fill:blue;
+  }
+}
+
+#svg_avantPlanNeige{
+  transform: translateZ(-1px) scale(2);
+  path{
+    fill:white;
   }
 }
