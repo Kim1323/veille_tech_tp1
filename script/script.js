@@ -1,4 +1,6 @@
+
 /*jshint -W066 */
+/*
 (function(){
   'use strict';
   
@@ -47,3 +49,4 @@
   }
   window.onload = init();
 }).call(this);
+*/

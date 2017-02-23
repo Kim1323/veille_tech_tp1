@@ -2,6 +2,18 @@ body,
 html {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  background: #E8F6FF;
+  background: linear-gradient(top, #32adff 0%,#e5e5e5 100%);
+}
+
+body {
+  font: 100% / 1.5 Arial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Parallax base styles
@@ -65,20 +77,6 @@ html {
 /* demo styles
 --------------------------------------------- */
 
-body,
-html {
-  overflow: hidden;
-  background-color: gray;
-}
-
-body {
-  font: 100% / 1.5 Arial;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 .parallax {
   font-size: 200%;
@@ -136,7 +134,7 @@ h1 {
   transform: translateZ(-4px) scale(5);
   transform: translateZ(-4px) scale(5);
   path{
-    fill:white;
+    fill:#C4E8FF;
   }
 }
 
@@ -145,7 +143,7 @@ h1 {
   transform: translateZ(-3px) scale(4);
   transform: translateZ(-3px) scale(4);
   path{
-    fill:lightblue;
+    fill:#91DAFF;
   }
 }
 
@@ -154,7 +152,7 @@ h1 {
   transform: translateZ(-2px) scale(3);
   transform: translateZ(-2px) scale(3);
   path{
-    fill:blue;
+    fill:#63C1FF;
   }
 }
 
@@ -162,10 +160,12 @@ h1 {
   transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
-  svg{
+  :nth-child(0){
     margin-top: -23%;
+  }
+  svg{
     path{
-      fill:white;
+      fill:#D6F5FF;
     }
   }
 }
