@@ -1,70 +1,7 @@
-/*!
- * fireshell
- * Fiercely quick and opinionated front-ends
- * http://getfireshell.com
- * @author Todd Motto
- * @version 1.1.0
- * Copyright 2013. MIT licensed.
- */
-
 body,
 html {
   height: 100%;
   width: 100%;
-  //background-color: #0f1629;
-}
-
-.bg {
-  //background-image: url("/assets/img/skyworks_bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-}
-
-.content {
-  position: relative;
-  background-color: #0f1629;
-  min-height: 500px;
-  width: 100%;
-  font-family: "Arial";
-  line-height: 40px;
-  color: white;
-  font-size: 16px;
-  margin: auto;
-  text-align: center;
-  padding-top: 200px;
-}
-
-.content p {
-  margin: auto;
-  text-align: center;
-  padding: 50px;
-  max-width: 900px;
-}
-
-a,
-a:visited,
-a:active {
-  color: inherit;
-}
-
-a:hover {
-  color: inherit;
-}
-
-.btn {
-  border-radius: 0px;
-  text-transform: uppercase;
-  border: 2px solid white;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 20px 50px;
-}
-
-.btn:hover {
-  background-color: white;
-  color: #0f1629;
 }
 
 /* Parallax base styles
@@ -116,91 +53,6 @@ a:hover {
   z-index: -3;
 }
 
-.parallax__layer--river {
-  position: fixed;
-  transform: translateZ(-2px) scale(3);
-  transform: translateZ(-2px) scale(3);
-  transform: translateZ(-2px) scale(3);
-  //background-image: url("http://skyworks.enormo.us/assets/img/mounts_2.png");
-  margin-top: 95%;
-  z-index: -4;
-}
-
-.parallax__layer--back {
-  position: fixed;
-  transform: translateZ(-3px) scale(4);
-  transform: translateZ(-3px) scale(4);
-  transform: translateZ(-3px) scale(4);
-  //background-image: url("http://skyworks.enormo.us/assets/img/mounts_3.png");
-  margin-top: 130%;
-  z-index: -5;
-}
-
-.parallax__layer--deep {
-  position: fixed;
-  transform: translateZ(-4px) scale(5);
-  transform: translateZ(-4px) scale(5);
-  transform: translateZ(-4px) scale(5);
-  //background-image: url("http://skyworks.enormo.us/assets/img/mounts_4.png");
-  margin-top: 145%;
-  z-index: -6;
-}
-
-.parallax__layer--drone-a {
-  position: fixed;
-  transform: translateZ(0) scale(1);
-  transform: translateZ(0) scale(1);
-  transform: translateZ(0) scale(1);
-  //background-image: url("http://skyworks.enormo.us/assets/img/drone_a.png");
-  width: 38vw;
-  margin-top: 13%;
-  z-index: -7;
-}
-
-.parallax__layer--drone-b {
-  position: fixed;
-  transform: translateZ(-3px) scale(4);
-  transform: translateZ(-3px) scale(4);
-  transform: translateZ(-3px) scale(4);
-  //background-image: url("http://skyworks.enormo.us/assets/img/drone_b.png");
-  margin: auto;
-  margin-top: 13%;
-  right: 0px;
-  width: 18vw;
-  margin-right: -50%;
-  z-index: -8;
-}
-
-.parallax__layer--logo {
-  position: fixed;
-  transform: translateZ(-3px) scale(4);
-  transform: translateZ(-3px) scale(4);
-  transform: translateZ(-3px) scale(4);
-  //background-image: url("../img/logo.svg");
-  right: 0px;
-  width: 30vw;
-  margin: auto;
-  margin-right: -50%;
-  margin-top: 13%;
-  color: white;
-  font-size: 50px;
-  letter-spacing: 10px;
-  text-align: center;
-  margin: auto;
-  margin-top: 76%;
-  z-index: -9;
-}
-
-.parallax__layer--bg {
-  position: fixed;
-  transform: translateZ(-5px) scale(6);
-  transform: translateZ(-5px) scale(6);
-  transform: translateZ(-5px) scale(6);
-  //background-image: url("../img/fond.svg");
-  background-size: 100%;
-  height: 100vh;
-  z-index: -10;
-}
 
 .base {
   height: 100%;
@@ -216,7 +68,7 @@ a:hover {
 body,
 html {
   overflow: hidden;
-  background-color: #0f1629;
+  background-color: gray;
 }
 
 body {
@@ -310,7 +162,10 @@ h1 {
   transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
-  path{
-    fill:white;
+  svg{
+    margin-top: -23%;
+    path{
+      fill:white;
+    }
   }
 }
