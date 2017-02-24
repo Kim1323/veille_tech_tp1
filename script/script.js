@@ -1,52 +1,35 @@
 
-/*jshint -W066 */
-/*
-(function(){
-  'use strict';
-  
-  
-  var svg = function(el){
-    return document.getElementById(el);
-  };
-  
-  function init(){
-    var all = document.querySelectorAll('svg path');
-    for (var i = 1; i < all.length+1; i++) {
-      getwebkitaniimation(svg('img_'+i),i);
-    }
-  }
-  
-  // Support css3
-  function getsupportedprop(proparray){
-    var root=document.documentElement;
-    for (var i=0; i<proparray.length; i++){
-      if (proparray[i] in root.style){
-        return proparray[i];
-      }
-    }
-  }
-  
-  // get-webkit-animation(class,time)
-  function getwebkitaniimation(el,time){
-    
-    var transition = getsupportedprop([
-      'WebkitTransition', 'MozTransition',
-      'msTransition','OTransition','transition'
-    ]);
-    
-    var length = el.getTotalLength();
-  
-      el.style[transition] = 'none';
-    
-    el.style.strokeDasharray = length + ' ' + length;
-    el.style.strokeDashoffset = length;
-    
-    el.getBoundingClientRect();
-    // el.style[transition] = 
-    el.style[transition] ='stroke-dashoffset '+ time + 's ease-in-out';
-    el.style.strokeDashoffset = '0';
-    return el;
-  }
-  window.onload = init();
-}).call(this);
-*/
+var lettreT = document.querySelectorAll("#svg_animTIM path")[0];
+var lettreT2 = document.querySelectorAll("#svg_animTIM path")[1];
+var lettreI = document.querySelectorAll("#svg_animTIM path")[2];
+var lettreM = document.querySelectorAll("#svg_animTIM path")[3];
+var longueurT = lettreT.getTotalLength();
+var longueurT2 = lettreT2.getTotalLength();
+var longueurI = lettreI.getTotalLength();
+var longueurM= lettreM.getTotalLength();
+
+lettreT.style.strokeDasharray = longueurT;
+lettreT2.style.strokeDasharray = longueurT2;
+lettreI.style.strokeDasharray = longueurI;
+lettreM.style.strokeDasharray = longueurM
+
+lettreT.style.strokeDashoffset = longueurT;
+lettreT2.style.strokeDashoffset = longueurT2;
+lettreI.style.strokeDashoffset = longueurI;
+lettreM.style.strokeDashoffset = longueurM;
+
+window.addEventListener("scroll", maTrace);
+
+function maTrace() {
+  var fractionDuScroll = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  var traceT = longueurT * fractionDuScroll;
+  var traceT2 = longueurT2 * fractionDuScroll;
+  var traceI = longueurI * fractionDuScroll;
+  var traceM = longueurM * fractionDuScroll;
+
+  lettreT.style.strokeDashoffset = longueurT - traceT ;
+  lettreT2.style.strokeDashoffset = longueurT2 - traceT2 ;
+  lettreI.style.strokeDashoffset = longueurI - traceI ;
+  lettreM.style.strokeDashoffset = longueurM- traceM ;
+}
