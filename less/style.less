@@ -107,12 +107,25 @@ h1 {
     stroke:none;
   }
 }
+#svg_Lune, #svg_fondMontagne1{
+  transform: translateZ(-4px) scale(5);
+  transform: translateZ(-4px) scale(5);
+  transform: translateZ(-4px) scale(5);
+}
+
+#svg_animLune{
+  #svg_lune{
+    margin-left: 80%;
+    margin-top: -7%;
+    path{
+      animation: animLune infinite alternate 2s;
+      fill:yellow;
+    }
+  }
+}
 
 #svg_fondMontagne1{
   z-index: -5;
-  transform: translateZ(-4px) scale(5);
-  transform: translateZ(-4px) scale(5);
-  transform: translateZ(-4px) scale(5);
   path{
     fill:#C4E8FF;
   }
@@ -149,5 +162,15 @@ h1 {
     path{
       fill:#D6F5FF;
     }
+  }
+}
+
+
+@keyframes animLune{
+  from{
+    fill: yellow;
+  }
+  to{
+    fill: white;
   }
 }
